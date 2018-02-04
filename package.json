@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "iconv-lite": "^0.4.19"
+    "iconv-lite": "^0.4.19",
+    "request": "^2.83.0",
+    "superagent": "^3.8.2"
   }
 }
