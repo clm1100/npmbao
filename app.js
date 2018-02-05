@@ -14,6 +14,9 @@ var request = require('request');
 //     console.log(buffer)
 // })
 
+var iconv = require('iconv-lite');
+var request = require('request');
+
 request({
     method: 'GET',
     uri: 'http://www.biqugew.com',
@@ -21,11 +24,8 @@ request({
 
 }, function (error, response, body) {
     console.log(response.body)
-    // let gbkstr = iconv.decode(response.body,'gb2312');
-    let utf8str = iconv.decode(response.body,'utf8')
-    console.log(utf8str)
-    //   console.log('the decoded data is: ' + body)
-      
+    let gbkstr = iconv.decode(response.body,'gb2312');
+    console.log(gbkstr)
 })
 
 
